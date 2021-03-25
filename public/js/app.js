@@ -16,7 +16,7 @@
        console.log(input)
        messageOne.textContent = 'Loading...';
         messageTwo.textContent = '';
-       fetch(`http://localhost:3000/weather?address=${input}`)
+       fetch(`/weather?address=${input}`)
         .then((response) => {
             response.json()
             .then((data) => {
