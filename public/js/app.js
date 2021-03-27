@@ -25,10 +25,10 @@
                     messageOne.textContent = data.error;
 
                 }else{
-                    console.log(data.location);
+                    console.log('data:', data);
                     messageOne.textContent = data.location;
                     console.log(data.forecast);
-                    messageTwo.textContent = `It is ${data.forecast.current}, ${data.forecast.feelslike} degrees`;
+                    messageTwo.textContent = `It is ${data.forecast.current}, ${data.forecast.temperature} degrees and there is ${data.forecast.humidity}% humidity`;
                 }
                 
             })

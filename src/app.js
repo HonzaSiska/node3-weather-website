@@ -57,7 +57,7 @@ app.get('/weather', (req, res) => {
         if(error) return res.send({error: error});
 
         forecast( latitude, longitude , (error,forecastData) => {
-            const { current, feelslike} = forecastData;
+            const { current, temperature, humidity} = forecastData;
             if(error) return res.send({
                 error: error
             });
